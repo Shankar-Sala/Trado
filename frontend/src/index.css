@@ -50,8 +50,6 @@ body {
   }
 }
 
-
-
 /*! Navbar link hover effect */
 .navbar .nav-link {
   position: relative;
@@ -89,3 +87,4 @@ body {
   display: inline-block; /* required for underline to show correctly */
   margin: 5px 0; /* spacing in vertical mobile menu */
 }
+
