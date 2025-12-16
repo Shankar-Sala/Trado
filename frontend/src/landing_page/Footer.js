@@ -1,59 +1,62 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer style={{ backgroundColor: "rgb(250, 250, 250)" }}>
-      <div className="container border-top mt-5">
-        <div className="row mt-5">
-          <div className="col">
-            <img src="media/images/logo2.png" style={{ width: "50%" }} />
-            <p>
-              &copy; 2010 - 2025, Not Trado Broking Ltd. All rights reserved.
+      <div className="container border-top mt-5 pt-5">
+
+        {/* Top Footer */}
+        <div className="row text-muted">
+
+          <div className="col-12 col-md-3 mb-4">
+            <img
+              src="media/images/logo2.png"
+              alt="Trado logo"
+              className="img-fluid mb-3"
+              style={{ maxWidth: "160px" }}
+            />
+            <p style={{ fontSize: "14px" }}>
+              © 2010 - 2025, Not Trado Broking Ltd.
+              <br />
+              All rights reserved.
             </p>
           </div>
-          <div className="col">
-            <p>Company</p>
-            <a href="">About</a>
-            <br />
-            <a href="">Products</a>
-            <br />
-            <a href="">Pricing</a>
-            <br />
-            <a href="">Referral programme</a>
-            <br />
-            <a href="">Careers</a>
-            <br />
-            <a href="">Trado.tech</a>
-            <br />
-            <a href="">Press & media</a>
-            <br />
-            <a href="">Trado cares (CSR)</a>
-            <br />
+
+          <div className="col-6 col-md-3 mb-4">
+            <p className="fw-semibold">Company</p>
+            <Link to="/about" className="d-block text-decoration-none">About</Link>
+            <Link to="/products" className="d-block text-decoration-none">Products</Link>
+            <Link to="/pricing" className="d-block text-decoration-none">Pricing</Link>
+            <Link to="/referral" className="d-block text-decoration-none">Referral programme</Link>
+            <Link to="/careers" className="d-block text-decoration-none">Careers</Link>
+            <Link to="/press" className="d-block text-decoration-none">Press & media</Link>
+            <Link to="/csr" className="d-block text-decoration-none">Trado cares (CSR)</Link>
           </div>
-          <div className="col">
-            <p>Support</p>
-            <a href="">Contact</a>
-            <br />
-            <a href="">Support portal</a>
-            <br />
-            <a href="">Z-Connect blog</a>
-            <br />
-            <a href="">List of charges</a>
-            <br />
-            <a href="">Downloads & resources</a>
-            <br />
+
+          <div className="col-6 col-md-3 mb-4">
+            <p className="fw-semibold">Support</p>
+            <Link to="/contact" className="d-block text-decoration-none">Contact</Link>
+            <Link to="/support" className="d-block text-decoration-none">Support portal</Link>
+            <Link to="/blog" className="d-block text-decoration-none">Z-Connect blog</Link>
+            <Link to="/charges" className="d-block text-decoration-none">List of charges</Link>
+            <Link to="/downloads" className="d-block text-decoration-none">Downloads & resources</Link>
           </div>
-          <div className="col">
-            <p>Account</p>
-            <a href="">Open an account</a>
-            <br />
-            <a href="">Fund transfer</a>
-            <br />
-            <a href="">60 day challenge</a>
-            <br />
+
+          <div className="col-6 col-md-3 mb-4">
+            <p className="fw-semibold">Account</p>
+            <Link to="/signup" className="d-block text-decoration-none">Open an account</Link>
+            <Link to="/fund-transfer" className="d-block text-decoration-none">Fund transfer</Link>
+            <Link to="/challenge" className="d-block text-decoration-none">60 day challenge</Link>
           </div>
+
         </div>
-        <div className="mt-5 text-muted" style={{ fontSize: "14px" }}>
+
+        {/* FULL Legal Text - NOT REMOVED */}
+        <div
+          className="mt-4 text-muted"
+          style={{ fontSize: "13px", lineHeight: "1.6" }}
+        >
           <p>
             Trado Broking Ltd.: Member of NSE​ &​ BSE – SEBI Registration no.:
             INZ000031633 CDSL: Depository services through Trado Securities Pvt.
@@ -99,6 +102,7 @@ function Footer() {
             create a ticket here.
           </p>
         </div>
+
       </div>
     </footer>
   );

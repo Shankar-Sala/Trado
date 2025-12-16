@@ -1,16 +1,15 @@
-import React from 'react';
-import Hero from './Hero';
-import Team from './Team';
+import React from "react";
 
+import Hero from "./Hero";
+import Team from "./Team";
 
-
-function About() {
-  return ( 
+function PricingPage() {
+  return (
     <>
-    <Hero />
-    <Team />
+      <Hero />
+      <Team />
     </>
-   );
+  );
 }
 
-export default About;
+export default PricingPage;
