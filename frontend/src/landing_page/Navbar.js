@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg border-bottom" style={{ backgroundColor: "#FFF" }}>
+    <nav
+      className="navbar navbar-expand-lg border-bottom sticky-top"
+      style={{ backgroundColor: "#FFF", zIndex: 1000 }}
+    >
       <div className="container py-2">
 
         {/* Logo */}
