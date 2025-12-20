@@ -30,9 +30,9 @@ function Team() {
         {/* Bio */}
         <div className="col-12 col-md-7 px-3 px-md-5">
           <p className="lh-lg">
-            Nithin bootstrapped and founded Zerodha in 2010 to overcome the
+            Nithin bootstrapped and founded Trado in 2010 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,
-            Zerodha has changed the landscape of the Indian broking industry.
+            Trado has changed the landscape of the Indian broking industry.
           </p>
 
           <p className="lh-lg">
